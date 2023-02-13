@@ -1,0 +1,82 @@
+/* Write your code here. */
+.bg-container {
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.text-image-container {
+  display: flex;
+  justify-content: space-between;
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 30px;
+}
+.header {
+  font-size: 42px;
+  color: #ffffff;
+}
+.para {
+  font-size: 20px;
+  color: #ffffff;
+}
+.text-input {
+  color: #e4e7eb;
+  background-color: transparent;
+  width: 100%;
+  height: 30px;
+  border: 1px solid #ffffff;
+  outline: none;
+}
+.button {
+  background-color: #ffffff;
+  color: #219a6f;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 800;
+  outline: none;
+  border: 0px none #ffffff;
+  width: 50%;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+.image {
+  width: 70%;
+}
+
+@media (max-width: 576px) {
+  .text-image-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .image-container {
+    order: 0;
+  }
+  .text-container {
+    order: 1;
+    justify-content: center;
+    align-items: center;
+  }
+  .header {
+    font-size: 25px;
+  }
+  .para {
+    font-size: 15px;
+    align-self: flex-start;
+  }
+  .button {
+    padding: 10px;
+    font-size: 10px;
+    width: 100%;
+  }
+}
